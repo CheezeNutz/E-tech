@@ -1,0 +1,103 @@
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Mojang-Regular;
+}
+
+@font-face{
+src: url(Mojang-Regular.ttf);
+font-family: Mojang-Regular;
+}
+
+body{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+min-height:100vh;
+padding:40px;
+color:white;
+}
+
+nav{
+position:fixed;
+top:10px;
+left:50%;
+transform:translateX(-50%);
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(10px);
+padding:10px 20px;
+border-radius:20px;
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.page{
+margin:120px auto;
+padding:40px;
+max-width:900px;
+
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(15px);
+border-radius:20px;
+border:1px solid rgba(255,255,255,0.2);
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+h1{
+margin-bottom:20px;
+}
+
+p{
+margin-bottom:10px;
+line-height:1.6;
+color: lightgrey;
+}
+
+
+/* ABOUT PAGE */
+
+.about-container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.about-text{
+flex:1;
+}
+
+.about-image img{
+width:200px;
+border-radius:20px;
+}
+
+
+/* MEMORIES */
+
+.gallery{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.memory{
+width:250px;
+text-align:center;
+}
+
+.memory img{
+width:100%;
+border-radius:15px;
+margin-bottom:10px;
+}
